@@ -32,29 +32,66 @@ console.log("Hollow Pyramid pattern");
 // console.log(string);
 
 
+// let n = 5;
+// let string = "";
+
+// // External loop
+// for (let i = 1; i <= n; i++) {
+//   // printing spaces
+//   for (let j = 1; j <= n - i; j++) {
+//     string += " ";
+//   }
+//   // printing star
+//   for (let k = 0; k < 2 * i - 1; k++) {
+//     if(i === 1 || i === n) {
+//       string += k;
+//     }
+//     else {
+//       if(k === 0 || k === 2 * i - 2) {
+//         string += k;
+//       }
+//       else {
+//         string += " ";
+//       }
+//     }
+//   }
+//   string += "\n";
+// }
+// console.log(string);
+
+//      *
+//     * *
+//    *   * 
+//   *     *
+//  * * * * * 
+
+
 let n = 5;
 let string = "";
 
-// External loop
-for (let i = 1; i <= n; i++) {
-  // printing spaces
-  for (let j = 1; j <= n - i; j++) {
-    string += " ";
+for(let i = 1; i <= n; i++){
+
+  for(let k = 1; k <= ; k++){
+
   }
-  // printing star
-  for (let k = 0; k < 2 * i - 1; k++) {
-    if(i === 1 || i === n) {
-      string += k;
-    }
-    else {
-      if(k === 0 || k === 2 * i - 2) {
-        string += k;
-      }
-      else {
+  for(let j = 1; j <= i; j++){
+    if(i === n || i === 1){
+      string += "*";
+    }else{
+      if(j === 1 || j === i){
+        string += "*";
+      }else{
         string += " ";
       }
+      
     }
+    string += "";
   }
   string += "\n";
 }
+
 console.log(string);
+
+
+
+

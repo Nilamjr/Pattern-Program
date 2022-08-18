@@ -71,17 +71,17 @@ let string = "";
 
 for(let i = 1; i <= n; i++){
 
-  for(let k = 1; k <= ; k++){
-
+  for(let k = 1; k <= n - i ; k++){
+    string += " ";
   }
-  for(let j = 1; j <= i; j++){
+  for(let j = 0; j < 2 * i - 1; j++){
     if(i === n || i === 1){
       string += "*";
     }else{
-      if(j === 1 || j === i){
-        string += "*";
+      if(j === 0 || j === 2 * i - 2){
+        string += j;
       }else{
-        string += " ";
+        string += "*";
       }
       
     }

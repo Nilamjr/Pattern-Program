@@ -44,20 +44,20 @@ console.log("pyramid pattern program");
 //     console.log(string);
 
 
-let n = 5;
-let string = "";
+// let n = 5;
+// let string = "";
 
-for(let i = 1; i <= n; i++){
-    for(let j = 1; j <= n-i; j++){
-        string += " "; 
-    }
-    for(let k = 1; k <= 2 * i - 1 ; k++){
-        string += "*";
-    }
-    string += "\n";
-}
+// for(let i = 1; i <= n; i++){
+//     for(let j = 1; j <= n-i; j++){
+//         string += " "; 
+//     }
+//     for(let k = 1; k <= 2 * i - 1 ; k++){
+//         string += "*";
+//     }
+//     string += "\n";
+// }
 
-console.log(string);
+// console.log(string);
 
 
 
@@ -95,6 +95,20 @@ console.log(string);
 //         string += " ";
 //     }
 //     for(let j = 0; j < 2 * (n - i) - 1; j++){
+//         string += "*";
+//     }
+//     string += "\n";
+// }
+// console.log(string);
+
+
+// REversed pyramid practice 
+
+// let n = 5; 
+// let string = "";
+
+// for(let i = 0; i < n; i++){
+//     for(let star = 0; star < 2 * (n - i) - 1; star++){
 //         string += "*";
 //     }
 //     string += "\n";

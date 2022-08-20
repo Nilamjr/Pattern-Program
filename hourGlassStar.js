@@ -1,24 +1,28 @@
 let n = 5;
 let string = "";
-for(let belowRow = 1; belowRow <= n - 1; belowRow++){
-    for(let space = 1; space <= belowRow; space++){
-        string += " "; 
+
+
+for(let aboveRow = 0; aboveRow < n; aboveRow++){
+    for(let space = 0; space < aboveRow; space++){
+        string += " ";
     }
-    for(let star = 1; star <= 2 * (n - belowRow) - 1; star++){
-        string += "*"; 
+    for(let star = 0; star < (n - aboveRow) * 2 - 1; star++){
+        string += "*";
     }
-    string += "\n"; 
+    string += "\n";
 }
 
-for(let row = 1; row <= n; row++){
-    for(let space = 1; space <= n - row; space++){
-        string += " "; 
+for(let belowRow = 2; belowRow <= n; belowRow++){
+    for(let space = 1; space <= n - belowRow; space++){
+        string += " ";
     }
-    for(let star = 1; star <= 2 * row - 1; star++){
-        string += "*"; 
-      
+    for(let star = 0; star < belowRow * 2 - 1; star++){
+        string += "*";
     }
     string += "\n";
 }
 
 console.log(string);
+// for(){
+
+// }

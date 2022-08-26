@@ -39,37 +39,25 @@
 // console.log(str);
 
 
-let n = 14;
+let n = 6;
 let string = "";
 
-for(let i = n / 2; i < n; i += 2){
-  for(let space1 = 1; space1 < n - i; space1 += 2){
-    string += " ";
-  }
-  for(let star1 = 1; star1 <= i; star1++){
-    string += "*";
-  }
-  for(let space2 = 1; space2 < n - i + 1; space2++){
-    string += " ";
-  }
-  for(let star1 = 1; star1 < i + 1; star1++){
-    string += "*";
-  }
 
+for(let i = n/2; i < n; i += 2){
 
-  string += "\n";
-}
+    for(let s1 = 1; s1 < n - i ; s1 += 2){
+      string += " ";
+    }
 
-for (let i = n; i > 0; i--) {
-  for (let j = 0; j < n - i; j++) {
-    string += " ";
-  }
-  for (let j = 1; j < i * 2; j++) {
-    string += "*";
-  }
-  string += "\n";
+    for(let st1 = 1; st1 <= i; st1++){
+      string += "*";
+    }
+
+    // for(let s2 = )
+
+    string += "\n";
+
 }
 
 
 console.log(string);
-

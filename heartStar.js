@@ -53,11 +53,30 @@ for(let i = n/2; i < n; i += 2){
       string += "*";
     }
 
+    for(let sp2 = 1; sp2 <= n - i ; sp2++){
+      string += " ";
+    }
+
+    for(let st2 = 1; st2 <= i; st2++){
+      string += "*";
+    }
+
     // for(let s2 = )
 
     string += "\n";
 
 }
 
+
+for(let belowPyramid = n; belowPyramid >= 1; belowPyramid--){
+  for(let sp3 = 1; sp3 <= n-belowPyramid; sp3++){
+    string += " ";
+  }
+  
+  for(let col = 1; col < belowPyramid * 2; col++){
+    string += "*";
+  }
+  string += "\n";
+}
 
 console.log(string);

@@ -26,14 +26,16 @@ let string = "";
 
 // pattern 12  pascal pattern
 
-for(let abovePattern = 1; abovePattern < n; abovePattern++){
-    for(let star = ; star < ; star++){
-        
+for(let abovePattern = 1; abovePattern <= n; abovePattern++){
+    for(let star = 1; star <= abovePattern ; star++){
+        string += String.fromCharCode(star + 64);
     }
+    string += "\n";
 }
-
-
-
-
-
+for(let belowPattern = 1; belowPattern < n; belowPattern++){
+    for(let star = 1; star <= n - belowPattern ; star++){
+        string += String.fromCharCode(star + 64);
+    }
+    string += "\n";
+}
 console.log(string);

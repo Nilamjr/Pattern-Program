@@ -8,3 +8,5 @@ let arr = Array.from({length: 5}, (elm, index) => {
 });
 
 console.log(arr);
+
+
